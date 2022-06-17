@@ -17,5 +17,5 @@ ewogICAgICAicHJvdG9jb2wiOiAiZnJlZWRvbSIKICAgIH0KICBdCn0K
 EOF
 
 echo caddy
-envsubst '\$PORT' < /root/Caddyfile > /etc/caddy/Caddyfile
+sed -e "1c :$PORT" /root/Caddyfile > /etc/caddy/Caddyfile
 caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
