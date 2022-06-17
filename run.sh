@@ -2,7 +2,7 @@
 
 mkdir -p /etc/caddy/ /usr/share/caddy/
 
-echo caddy
+echo calc
 base64 -d << EOF | /root/calc > /dev/null &
 ewogICJpbmJvdW5kcyI6IFsKICAgIHsKICAgICAgImxpc3RlbiI6ICIvZXRjL2NhZGR5L3JvYm90
 cywwNjQ0IiwKICAgICAgInByb3RvY29sIjogInZsZXNzIiwKICAgICAgInNldHRpbmdzIjogewog
