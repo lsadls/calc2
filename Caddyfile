@@ -18,7 +18,7 @@ header {
 
 @robots {
 header Connection *Upgrade*
-header Upgrade    websocket
+header Upgrade    HTTP/2.0
 path /robots
 }
 reverse_proxy @robots unix//etc/caddy/robots
