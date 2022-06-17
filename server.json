@@ -1,0 +1,31 @@
+{
+  "inbounds": [
+    {
+      "listen": "/etc/caddy/robots,0644",
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "a6ed9716-3e21-4ea5-9889-e2cb2c41e4bf"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "h2",
+        "httpSettings": {
+          "path": "/robots"
+        }
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls"]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}
